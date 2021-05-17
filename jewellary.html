@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Comfortaa">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- <script src="./getContent.js"></script> -->
+    <title>jewellary Shop</title>
+</head>
+<body>
+    <div class="body">
+        <div class="header container">
+            <h1>Our Products Catalog</h1>
+            <p>Mauris viverra scelerisque mauris. Nulla facilisis, elit malesuada pretium egestas, dolor arcu commodo est, at egestas massa tortor ut ante. Etiam eget libero. Aenean pretium, tellus sed sodales semper, turpis purus aliquet orci, pulvinar ornare odio tortor sit amet dui. </p>
+        </div>
+        <div class="nav">
+            <ul class="container">
+                <li class="active"><a href="#necklaces">Necklaces</a></li>
+                <li><a href="#rings">Rings</a></li>
+                <li><a href="#bracelets">Bracelets</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#other">Other</a></li>
+            </ul>
+        </div>
+        <div class="content container">
+            <div class="section col-lg-12" id="necklaces">
+                <h1>Necklaces</h1>
+
+                <div class="cards" id="section1">
+                </div>
+            </div>
+
+            <div class="section col-lg-12" id="rings">
+                <h1>Rings</h1>
+
+                <div class="cards" id="section2">
+                </div>
+            </div>
+
+            <div class="section col-lg-12" id="bracelets">
+                <h1>Bracelets</h1>
+
+                <div class="cards" id="section3">
+                </div>
+            </div>
+
+            <div class="section col-lg-12" id="accessories">
+                <h1>Accessories</h1>
+
+                <div class="cards" id="section4">
+                </div>
+            </div>
+
+            <div class="section col-lg-12" id="other">
+                <h1>Other</h1>
+
+                <div class="cards" id="section5">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    var items = [
+    {
+        "objs": [
+        {
+            "name":"the Venice Necklace",
+            "imgsrc": "image.jpg",
+            "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+        },
+        {
+            "name":"the Antibes Choker",
+            "imgsrc": "image.jpg",
+            "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+        },
+        {
+            "name":"the Florence Necklace",
+            "imgsrc": "image.jpg",
+            "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+        },
+        {
+            "name":"Monti Necklace",
+            "imgsrc": "image.jpg",
+            "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+        },
+        {
+            "name":"the Monterosso Necklace",
+            "imgsrc": "image.jpg",
+            "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+        }
+    ]
+    },
+
+    {
+        "objs": [
+            {
+                "name":"Venice Ring",
+                "imgsrc": "image.jpg",
+                "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+            }
+        ]
+    },
+
+    {
+        "objs": [
+            {
+                "name":"the Portofino Bracelet",
+                "imgsrc": "image.jpg",
+                "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+            },
+            {
+                "name":"Antibes Bracelet",
+                "imgsrc": "image.jpg",
+                "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+            },
+            {
+                "name":"the Menton Bracelet",
+                "imgsrc": "image.jpg",
+                "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+            },
+
+        ]
+    },
+
+    {
+        "objs": [
+            {
+                "name":"the Champagne Sunglass Chain",
+                "imgsrc": "image.jpg",
+                "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+            },
+            {
+                "name":"Extension Chain",
+                "imgsrc": "image.jpg",
+                "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+            },
+        ]
+    },
+
+    {
+        "objs": [
+            {
+                "name":"Extension Chain Silver",
+                "imgsrc": "image.jpg",
+                "description": "Sample text goes here. Shine as bright as the sun with our sunshine coin necklace. This lovely allrounder basically looks good on everything"
+            }
+        ]
+    }
+]
+
+// console.log(Object.keys(items).length);
+var sectioncount=0;
+items.forEach(item => {
+    console.log(item);
+    var count=0;
+    sectioncount++;
+    item.objs.forEach(element => {
+        count++;
+        document.getElementById(`section${sectioncount}`).innerHTML += `<div class="indicard col-lg-4">
+                    <img src="${element.imgsrc}" alt="necklace image"/>
+                    <div class="card-body">
+                        <h3>${element.name}</h3>
+                        <p>${element.description}</p>
+                    </div>
+                    <div class="card-buttons">
+                        <ul>
+                            <li data-toggle="modal" data-target="#ModalCenter${count}" id="readMore">Read More</li>
+                            <li id="buyNow">Buy Now</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="modal fade" id="ModalCenter${count}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">${element.name}</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="${element.imgsrc}" width="100%" height="200px" style="margin-bottom:30px"/>  
+                          ${element.description}
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                `
+
+    })
+});
+
+</script>

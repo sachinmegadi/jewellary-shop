@@ -1,0 +1,135 @@
+/* @import url('https://fonts.google.com/specimen/Comfortaa');
+@import url('https://fonts.google.com/specimen/Josefin+Sans'); */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.body{
+    margin-top: 40px;
+}
+
+.header h1{
+    font-family: 'Josefin Sans';
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.header p{
+    width: 500px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.nav{
+    width: 100%;
+    background-color: #d1ffff;
+    position: sticky;
+    top: 0;
+    margin: 40px 0;
+    z-index: 93473;
+}
+
+.nav ul{
+    display: inline-flex;
+}
+
+.nav ul li{
+    margin: 10px 20px 0 15px;
+    list-style: none;
+    font-family: 'Comfortaa';
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+    margin: 20px 0;
+}
+
+.content h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content .cards{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 0;
+    width: 100%;
+
+}
+.content .cards .indicard{
+    flex: 1;
+}
+
+.indicard img{
+    width: 100%;
+    height: 200px;
+}
+
+.indicard h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.indicard p{
+    font-size: 15px;
+}
+
+.indicard .card-buttons ul{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid black; */
+    /* margin: 0 auto; */
+}
+
+.indicard .card-buttons ul li{
+    cursor: pointer;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 5px 45px;
+    white-space: nowrap;
+    border: 1px solid rgb(74, 74, 209); 
+    /* border: 1px solid black; */
+}
+
+
+#readMore{
+    border-color: rgb(74, 74, 209); 
+    color: rgb(74, 74, 209);
+}
+
+#buyNow{
+    background-color: rgb(74, 74, 209); 
+    color: white;
+}
+
+.section h1{
+    margin: 40px 0px;
+    font-weight: bold;
+    font-family: 'Josefin Sans';
+
+}
+
+.active::after{
+    content: " ";
+    width: 120px;
+    height: 2px;
+    background-color: rgb(0, 72, 100);
+    position: absolute;
+    transform: translate(-100px, 36px);
+}
